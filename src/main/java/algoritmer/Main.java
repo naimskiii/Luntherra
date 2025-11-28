@@ -11,6 +11,8 @@ public class Main {
          w.tick();
          w.printStatus();
 
-         w.applyRule(city -> city.getInventory().add)
+
+
+
     }
 }

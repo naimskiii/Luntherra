@@ -31,12 +31,13 @@ public class MinList<T> implements Beholder<T>{
         values=ny;
     }
 
-    @Override
-    public applyRule(Rule<T> rule){
-        for(int i=0; i< size; i++){
+
+   /* public void applyRule(Rule<T> rule) {
+        for (int i = 0; i < size; i++) {
             rule.apply((T) values[i]);
         }
-    }
+    }*/
+
 
     @Override public boolean fjern(T verdi) { return false; }
     @Override public boolean inneholder(T verdi) { return false; }
@@ -45,5 +46,5 @@ public class MinList<T> implements Beholder<T>{
     @Override public void nullstill() { size = 0; values = new Object[10]; }
     @Override public T hentTilfeldig() { return null; }
     @Override public void handleEvent(String event) {}
-    @Override public Iterator<T> iterator() { return null; }
+    //@Override public Iterator<T> iterator() { return null; }
 }
